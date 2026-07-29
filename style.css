@@ -133,3 +133,12 @@ footer {
     padding: 30px;
     color: #888;
 }
+
+.skills-detailed {
+    margin-top: 20px;
+}
+
+.skills-detailed p {
+    margin-bottom: 8px;
+    color: #444;
+}
