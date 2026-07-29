@@ -1,34 +1,135 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  line-height: 1.6;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f7f9fc;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* NAV */
 nav {
-  margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #0077cc;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
+nav a:hover {
+    color: #0077ff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header h2 {
+    font-weight: 400;
+    color: #555;
+    margin: 10px 0;
+}
+
+.subtitle {
+    margin: 15px 0;
+    color: #666;
 }
 
 .links a {
-  margin: 0 10px;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: 500;
 }
 
-section {
-  margin-bottom: 40px;
+.links a:hover {
+    text-decoration: underline;
 }
 
-.job, .project {
-  margin-bottom: 20px;
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* SECTIONS */
+h2 {
+    margin-bottom: 15px;
+}
+
+/* JOB */
+.job {
+    margin-bottom: 20px;
+}
+
+.job span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+/* PROJECT */
+.project {
+    margin-bottom: 15px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: #eef4ff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #888;
 }
